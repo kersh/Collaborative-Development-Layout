@@ -138,6 +138,7 @@ body:before {
 	width: 130px;
 	float: left;
 	padding: 0 5px;
+	margin-right: 10px;
 }
 	#nav {
 		font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
@@ -188,10 +189,148 @@ body:before {
 
 /*** CONTENT ***/
 #content {
-	background: #aaa;
 	overflow: hidden;
-	width: 760px;
+	width: 750px;
 }
+	#itemsTitleBar {
+		background-color: rgba(190,190,190,0.5);
+		border-top: 1px solid #9d9d9d;
+		color: #585858;
+		font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
+		font-size: 0.9em;
+		padding: 2px 5px;
+	}
+		#itemsTitleBar li {
+			float: left;
+			display: block;
+		}
+		#itemsTitleBar #nameDesc {
+			width: 280px;
+			border-right: 1px solid #ababab;
+			padding: 2px 0;
+		}
+		#itemsTitleBar #provider {
+			width: 135px;
+			border-right: 1px solid #ababab;
+			padding: 2px 5px;
+		}
+		#itemsTitleBar #sortStock {
+			width: 147px;
+			border-right: 1px solid #ababab;
+			padding: 0 5px;
+		}
+			#itemsTitleBar #sortStock p, #itemsTitleBar #sortPrice p {
+				padding: 2px 0;
+			}
+			#itemsTitleBar #sortStock p, #itemsTitleBar #sortStock form, #itemsTitleBar #sortPrice p, #itemsTitleBar #sortPrice form {
+				float: left;
+			}
+			#itemsTitleBar #sortStock form, #itemsTitleBar #sortPrice form {
+				margin: -3px 0 0 0;
+				padding: 0;
+			}
+		#itemsTitleBar #sortPrice {
+			width: 145px;
+			padding: 0 5px;
+		}
+		
+	.item {
+		clear: both;
+		margin: 10px 0;
+		height: 130px;
+	}
+		.nameDescImg {
+			width: 280px;
+			height: 130px;
+			float: left;
+			padding: 0 5px 0 0;
+			border-right: 1px solid #ababab;
+		}
+			.imgDownlds {
+				float: left;
+				width: 130px;
+				margin: 0 4px 0 0;
+			}
+				.nameDescImg p.downloadNum {
+					font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
+					color: #4e4e4e;
+					display: block;
+					margin: -24px 0 0 0;
+					text-align: center;
+				}
+			.nameDescription {
+				float: left;
+				width: 145px;
+			}
+				.nameDescription h3 {
+					margin: 6px 0 0 0;
+				}
+					.nameDescription h3 a {
+						text-decoration: none;
+					}
+					.nameDescription h3 a:hover {
+						text-decoration: underline;
+					}
+				.nameDescription p {
+					font-family: Arial, Helvetica, Sans-serif;
+					font-size: 0.8em;
+					margin: 10px 0 0 0;
+					line-height: 1.3em;
+				}
+
+		.providerInfo {
+			width: 135px;
+			height: 130px;
+			float: left;
+			padding: 0 5px;
+			border-right: 1px solid #ababab;
+		}
+			.providerInfo h4 {
+				font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
+				margin: 5px 0 8px 0;
+			}
+			.providerInfo p {
+				font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
+				font-size: 1em;
+				line-height: 1.2em;
+				color: #686868;
+				font-size: 0.9em;
+			}
+				.providerInfo p span {
+					text-decoration: underline;
+					color: #333;
+				}
+				.providerInfo p strong {
+					font-weight: bold;
+				}
+		
+		.stockLevel {
+			width: 147px;
+			height: 130px;
+			float: left;
+			padding: 0 5px;
+			border-right: 1px solid #ababab;
+		}
+			.stockLevel p {
+				text-align: center;
+				margin-top: 40%;
+			}
+			.stockLevel .inStock {
+				
+			}
+			.stockLevel .outStock {
+				
+			}
+		
+		.price {
+			width: 160px;
+			height: 130px;
+			float: left;
+			text-align: center;
+		}
+			.price a.buyBtn {
+				margin: 40%;
+			}
 /*** END content ***/
 
 

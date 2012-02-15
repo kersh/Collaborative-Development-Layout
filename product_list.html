@@ -52,46 +52,50 @@
 			Pagination.
 		-->
 		<div id="content">
-			<div id="itemsTitleBar">
-				<p id="nameDesc">Name/Description</p>
-				<p id="provider">Wholesale Provider</p>
-				<p id="sortStock">Sort by: 
+			<ul id="itemsTitleBar">
+				<li id="nameDesc">Name/Description</li>
+				<li id="provider">Wholesale Provider</li>
+				<li id="sortStock"><p>Sort by: </p>
 				<form action="">
 					<select name="stockLevel">
 						<option value="mostStocked">Most stocked</option>
 						<option value="lessStocked">Less stocked</option>
 					</select>
-				</form></p>
-				<p id="sortPrice">Sort by: 
+				</form></li>
+				<li id="sortPrice"><p>Sort by: </p>
 				<form action="">
 					<select name="priceLevel">
 						<option value="lowFirst">Lowest first</option>
 						<option value="highFirst">Highest first</option>
 					</select>
-				</form></p>
-			</div><!-- end #itemsTitleBar -->
+				</form></li>
+				<div class="clearall"></div>
+			</ul><!-- end #itemsTitleBar -->
 			
 			<div class="item">
 				<div class="nameDescImg">
-					<img src="images/itemImages/item.jpg" alt="" />
-					<p class="downloadNum">13994 downloads</p>
+					<div class="imgDownlds">
+						<img src="images/itemImages/item1.png" alt="item1" />
+						<p class="downloadNum">13994 downloads</p>
+					</div>
 					<div class="nameDescription">
 						<h3><a href="#">FIFA</a></h3>
-						<p>FIFA 11 (FIFA Soccer 11 in North America) is the 18th title in Electronic Arts' FIFA series of football video games. Developed by EA Canada.</p>
+						<p>FIFA 11 (FIFA Soccer 11 in North America) is the 18th title in Electronic Arts' FIFA series of football video games. <a href="#">read more</a></p>
 					</div>					
 				</div>
 				<div class="providerInfo">
 					<h4>AE Games</h4>
 					<p>
-						12 South St.
-						Wolverhampton
-						WV10 JH6
-						<span>+44 07919580129</span>
+						12 South St.<br />
+						Wolverhampton<br />
+						WV10 JH6<br />
+						<span>+44 07919580129</span><br />
 						<strong>Vladimir Shafikov</strong>
 					</p>
 				</div>
 				<div class="stockLevel"><p class="inStock">in stock: 100</p></div><!-- class="outStock" -->
 				<div class="price"><a href="#" class="buyBtn">Buy &pound;17.50</a></div>
+				<div class="clearall"></div>
 			</div><!-- end .item -->
 			
 			<div id="paginator">

@@ -20,7 +20,7 @@
 				<div id="logo"><img src="images/logo.jpg" alt="Logotype" /></div>
 				<div id="search">
 					<form>
-						<input type="text" name="search" />
+						<input type="text" name="search" id="searchField" value="Search..." />
 						<input type="submit" value="Search" id="submitBtn" />
 					</form>
 				</div>
@@ -33,20 +33,18 @@
 			Sorting options.
 		-->
 		<div id="allNavigation">
-			<div id="nav">
-				<ul>
-					<li><a href="#">Featured products</a></li>
+				<ul id="nav">
+					<li><a href="#" class="current" >Featured products</a></li>
 					<li><a href="#">All products</a></li>
 					<li><a href="#">Games</a></li>
 					<li><a href="#">Software</a></li>
 				</ul>
-		
 				<ul id="sortNav">
+					<li class="sortByTitle">Sort by:</li>
+					<li><a href="#" class="currentSort">Newest first</a></li>
 					<li><a href="#">Most downloadable</a></li>
-					<li><a href="#">Newest</a></li>
 					<li><a href="#">A-Z</a></li>
 				</ul>
-			</div>
 		</div><!-- end #allNavigation -->
 		
 		<!--

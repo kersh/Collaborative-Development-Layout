@@ -19,6 +19,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a {
+	color: #1a7bdf;
+}
+
 body {
 	line-height: 1;
 	background: url('images/white_texture.png');
@@ -64,21 +68,139 @@ body:before {
 }
 
 #container {
-	width: 952px;
+	width: 900px;
 	margin: 0 auto;
 }
 
-/*HEADER*/
+/*** HEADER ***/
 #header {
-	
+	clear: both;
+	margin: 0 0 10px 0;
 }
 
 #accountBar {
 	background-color: rgba(192,192,192,0.5);
 	font-size: 0.9em;
+	width: 870px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 6px 10px;
+	overflow: hidden;
 }
+	p.welcomeMessage {
+		float: left;
+		display: block;
+		/*margin-right: 44%;*/
+	}
+	p.basketInfo {
+		float: right;
+	}
 
 #logoSearchBar {
-	background: url("") #777;
+	background: url("images/logoSearchBar_background.png") no-repeat;
+	width: 906px;
+	height: 52px;
+	margin: -4px auto 0 auto;
+	overflow: hidden;
 }
-/*END header*/
+	#logo {
+		float: left;
+		margin: 14px 32px 0 15px;
+	}
+
+	#searchField {
+		background: url("images/search_field_bg.png") no-repeat;
+		border: none;
+		height: 32px;
+		width: 459px;
+		margin: 11px 0 0 0;
+		padding: 0 7px;
+		font-family: PTSans, Arial, Helvetica, Sans-serif;
+		font-size: 0.9em;
+	}
+	#submitBtn {
+		background: url("images/searchBtnSprite.jpg") 0 0;
+		border: none;
+		padding: 6px 28px;
+		font-family: Arial, Helvetica, Sans-serif;
+		font-size: 1em;
+		color: #fff;
+		text-shadow: 1px 1px 1px #444;
+	}
+	#submitBtn:hover {
+		background: url("images/searchBtnSprite.jpg") 0 -31px;
+	}
+	#submitBtn:active {
+		background: url("images/searchBtnSprite.jpg") 0 -62px;
+	}
+	
+#allNavigation {
+	width: 130px;
+	float: left;
+	padding: 0 5px;
+}
+	#nav {
+		font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
+		font-size: 1.1em;
+		margin: 6px 0 35px 0;
+	}
+		#nav li {
+			border-bottom: 1px solid #ccc;
+		}
+			#nav li a {
+				color: #000;
+				text-decoration: none;
+				display: block;
+				padding: 7px 4px;
+			}
+			#nav li a:hover, #nav li a.current {
+				color: #fff;
+				background: #777;
+			}
+	#sortNav {
+		font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
+		font-size: 1em;
+		margin: 0;
+	}
+		#sortNav .sortByTitle {
+			font-weight: bold;
+			color: #aaa;
+			border-bottom: 1px solid #ccc;
+			padding: 3px 4px;
+		}
+		#sortNav li {
+			padding: 3px 0;
+		}
+			#sortNav li a {
+				color: #000;
+				text-decoration: none;
+				display: block;
+				padding: 2px 4px;
+			}
+			#sortNav li a:hover, #sortNav li a.currentSort {
+				color: #fff;
+				background: #bbb;
+				border-radius: 3px;
+			}
+/*** END header ***/
+
+
+
+/*** CONTENT ***/
+#content {
+	background: #aaa;
+	overflow: hidden;
+	width: 760px;
+}
+/*** END content ***/
+
+
+
+/*** FOOTER ***/
+#footer {
+	background: url("images/footer_background.png");
+	overflow: hidden;
+	height: 42px;
+	clear: both;
+}
+/*** END footer ***/

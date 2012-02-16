@@ -383,6 +383,35 @@ body:before {
 			float: right;
 			margin: 0 10px;
 		}
+		
+	/*** ABOUT US PAGE ***/
+		h1 {
+			font-size: 1.5em;
+			margin: 5px 0 10px 0;
+			padding: 5px 0;
+			border-bottom: 1px solid #aaa;
+		}
+		#map {
+			margin: 0 10px 10px 0;
+			float: left;
+		}
+		.contactInfo {
+			float: left;
+			clear: right;
+			color: #444;
+		}
+			.contactInfo p {
+				margin: 5px 0 20px 0;
+			}
+			.contactInfo ul li.liTitle {
+				font-size: 1.1em;
+				color: #222;
+				margin: 0 0 5px 0;
+			}
+			.contactInfo ul li {
+				margin: 5px 0;
+			}
+	/*** END about us page ***/	
 /*** END content ***/
 
 

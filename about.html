@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Web store. Collaborative Development.</title>
+</head>
+<body>
+	<div id="container">
+		<!--
+			Log in bar on the top. Basket if logged in.
+			Logo. Search.
+		-->
+		<div id="header">
+			<div id="accountBar">
+				<p class="welcomeMessage"><img src="images/icons/user.png" /> Hello, Username (username@email.com). <a href="#">Log out</a></p>
+				<p class="basketInfo"><img src="images/icons/cart.png"/> <a href="#">Your items: 0</a></p>
+			</div>
+		
+			<div id="logoSearchBar">
+				<div id="logo"><img src="images/logo.jpg" alt="Logotype" /></div>
+				<form id="search">
+					<input type="text" name="search" id="searchField" placeholder="Search..." />
+					<input type="submit" value="Search" id="submitBtn" />
+				</form>
+			</div>
+		</div><!-- end #header -->
+	
+	
+		<!--
+			Main navigation.
+			Sorting options.
+		-->
+		<div id="allNavigation">
+				<ul id="nav">
+					<li><a href="#">Featured products</a></li>
+					<li class="current"><a href="#">All products</a></li>
+					<li><a href="#">Games</a></li>
+					<li><a href="#">Software</a></li>
+				</ul>
+				<ul id="sortNav">
+					<li class="sortByTitle">Sort by:</li>
+					<li><a href="#" class="currentSort">Newest first</a></li>
+					<li><a href="#">Most downloadable</a></li>
+					<li><a href="#">A-Z</a></li>
+				</ul>
+		</div><!-- end #allNavigation -->
+		
+		<!--
+			Container with all items.
+			Pagination.
+		-->
+		<div id="content">
+			<h1>About us</h1>
+			<div id="map">
+				<iframe width="473" height="206" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=University+of+Wolverhampton+city+campus&amp;aq=&amp;sll=52.58844,-2.127204&amp;sspn=0.002047,0.004656&amp;t=h&amp;ie=UTF8&amp;filter=0&amp;st=111962455527842713054&amp;rq=1&amp;ev=zi&amp;split=1&amp;fll=52.588072,-2.127386&amp;fspn=0.004093,0.009313&amp;radius=0.12&amp;hq=University+of+Wolverhampton+city+campus&amp;ll=52.626316,-2.248979&amp;spn=0.005366,0.020256&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;q=University+of+Wolverhampton+city+campus&amp;aq=&amp;sll=52.58844,-2.127204&amp;sspn=0.002047,0.004656&amp;t=h&amp;ie=UTF8&amp;filter=0&amp;st=111962455527842713054&amp;rq=1&amp;ev=zi&amp;split=1&amp;fll=52.588072,-2.127386&amp;fspn=0.004093,0.009313&amp;radius=0.12&amp;hq=University+of+Wolverhampton+city+campus&amp;ll=52.626316,-2.248979&amp;spn=0.005366,0.020256&amp;z=15&amp;iwloc=A" style="color:#1a7bdf;text-align:left;text-decoration:none">View Larger Map</a></small>
+			</div>
+			<div class="contactInfo">
+				<p>Call us +44791234109</p>
+				<ul>
+					<li class="liTitle">Managers:</li>
+					<li>Ryan Phipps</li>
+					<li>Richard Hassett</li>
+					<li>Nathan Leadbetter</li>
+					<li>Matthew Walker</li>
+					<li>Andrey Fadeyev</li>
+					<li>Vladimir Shafikov</li>
+				</ul>
+			</div>
+		</div><!-- end #content -->
+		
+		<div id="footer">
+			<p class="year">2011 &ndash; 2012</p>
+			<p class="aboutUs"><a href="#">About us</a></p>
+		</div><!-- end #footer -->
+	</div><!-- end #container -->
+</body>
+
+</html>

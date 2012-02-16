@@ -107,7 +107,10 @@ body:before {
 		float: left;
 		margin: 14px 32px 0 15px;
 	}
-
+	#search {
+		padding: 0;
+		margin: 0;
+	}
 	#searchField {
 		background: url("images/search_field_bg.png") no-repeat;
 		border: none;
@@ -122,6 +125,8 @@ body:before {
 		background: url("images/searchBtnSprite.jpg") 0 0;
 		border: none;
 		padding: 6px 28px;
+		width: 107px;
+		height: 31px;
 		font-family: Arial, Helvetica, Sans-serif;
 		font-size: 1em;
 		color: #fff;
@@ -135,10 +140,10 @@ body:before {
 	}
 	
 #allNavigation {
-	width: 130px;
+	width: 140px;
 	float: left;
 	padding: 0 5px;
-	margin-right: 10px;
+	margin-right: 0;
 }
 	#nav {
 		font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
@@ -146,17 +151,21 @@ body:before {
 		margin: 6px 0 35px 0;
 	}
 		#nav li {
-			border-bottom: 1px solid #ccc;
+			height: 26px;
+			width: 135px;
+			margin: 2px 0;
 		}
 			#nav li a {
 				color: #000;
 				text-decoration: none;
 				display: block;
-				padding: 7px 4px;
+				padding: 3px 4px;
+				height: 26px;
 			}
-			#nav li a:hover, #nav li a.current {
+			#nav li a:hover, #nav li.current a {
 				color: #fff;
-				background: #777;
+				background: url("images/nav_item_background.png") no-repeat;
+				border: none;
 			}
 	#sortNav {
 		font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
@@ -316,10 +325,10 @@ body:before {
 				margin-top: 40%;
 			}
 			.stockLevel .inStock {
-				
+				color: #00b211;
 			}
 			.stockLevel .outStock {
-				
+				color: #ff8888;
 			}
 		
 		.price {
@@ -328,9 +337,52 @@ body:before {
 			float: left;
 			text-align: center;
 		}
-			.price a.buyBtn {
-				margin: 40%;
+			.price p {
+				margin-top: 36%;
 			}
+			.price a.buyBtn {
+				text-decoration: none;
+				color: #fff;
+				text-shadow: 1px 1px 1px #777;
+				padding: 5px 10px;
+				border-radius: 8px;
+				box-shadow: 1px 1px 2px #777;
+				background: #2993e0;
+				border: 1px solid #75c3ff;
+			}
+			.price a.buyBtn:hover {
+				background: #0a7ed0;
+			}
+			.price a.buyBtn:active {
+				background: #015895;
+				color: #777;
+				text-shadow: 1px 1px 1px #333	;
+			}
+	#paginator {
+		margin: 20px 0;
+		padding: 5px 0;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+	}
+		#paginator a {
+			text-decoration: none;
+			background: #3d87cd;
+			color: #fff;
+			padding: 5px 7px;
+			border-radius: 5px;
+			border: 1px solid #51a2ef;
+		}
+		#paginator a:hover {
+			background: #2e679d;
+		}
+		#paginator .previous {
+			float: left;
+			margin: 0 0 0 5px;
+		}
+		#paginator .next {
+			float: right;
+			margin: 0 10px;
+		}
 /*** END content ***/
 
 
@@ -341,5 +393,24 @@ body:before {
 	overflow: hidden;
 	height: 42px;
 	clear: both;
+	font-family: "Arial Narrow", Arial, Helvetica, Sans-serif;
 }
+	#footer p {
+		margin: 13px 5px;
+		color: #575757;
+	}
+	#footer p.aboutUs {
+		float: right;
+		margin-right: 15px;
+	}
+		#footer p.aboutUs a {
+			text-decoration: none;
+		}
+		#footer p.aboutUs a:hover {
+			text-decoration: underline;
+		}
+	#footer p.year {
+		float: left;
+		margin-left: 48%;
+	}
 /*** END footer ***/

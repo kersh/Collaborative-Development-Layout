@@ -18,12 +18,10 @@
 		
 			<div id="logoSearchBar">
 				<div id="logo"><img src="images/logo.jpg" alt="Logotype" /></div>
-				<div id="search">
-					<form>
-						<input type="text" name="search" id="searchField" value="Search..." />
-						<input type="submit" value="Search" id="submitBtn" />
-					</form>
-				</div>
+				<form id="search">
+					<input type="text" name="search" id="searchField" placeholder="Search..." />
+					<input type="submit" value="Search" id="submitBtn" />
+				</form>
 			</div>
 		</div><!-- end #header -->
 	
@@ -34,8 +32,8 @@
 		-->
 		<div id="allNavigation">
 				<ul id="nav">
-					<li><a href="#" class="current" >Featured products</a></li>
-					<li><a href="#">All products</a></li>
+					<li><a href="#">Featured products</a></li>
+					<li class="current"><a href="#">All products</a></li>
 					<li><a href="#">Games</a></li>
 					<li><a href="#">Software</a></li>
 				</ul>
@@ -94,22 +92,72 @@
 					</p>
 				</div>
 				<div class="stockLevel"><p class="inStock">in stock: 100</p></div><!-- class="outStock" -->
-				<div class="price"><a href="#" class="buyBtn">Buy &pound;17.50</a></div>
+				<div class="price"><p><a href="#" class="buyBtn">Buy &pound;17.50</a></p></div>
+				<div class="clearall"></div>
+			</div><!-- end .item -->
+			
+			<div class="item">
+				<div class="nameDescImg">
+					<div class="imgDownlds">
+						<img src="images/itemImages/item1.png" alt="item1" />
+						<p class="downloadNum">13994 downloads</p>
+					</div>
+					<div class="nameDescription">
+						<h3><a href="#">FIFA</a></h3>
+						<p>FIFA 11 (FIFA Soccer 11 in North America) is the 18th title in Electronic Arts' FIFA series of football video games. <a href="#">read more</a></p>
+					</div>					
+				</div>
+				<div class="providerInfo">
+					<h4>AE Games</h4>
+					<p>
+						12 South St.<br />
+						Wolverhampton<br />
+						WV10 JH6<br />
+						<span>+44 07919580129</span><br />
+						<strong>Vladimir Shafikov</strong>
+					</p>
+				</div>
+				<div class="stockLevel"><p class="inStock">in stock: 100</p></div><!-- class="outStock" -->
+				<div class="price"><p><a href="#" class="buyBtn">Buy &pound;17.50</a></p></div>
+				<div class="clearall"></div>
+			</div><!-- end .item -->
+			
+			<div class="item">
+				<div class="nameDescImg">
+					<div class="imgDownlds">
+						<img src="images/itemImages/item1.png" alt="item1" />
+						<p class="downloadNum">13994 downloads</p>
+					</div>
+					<div class="nameDescription">
+						<h3><a href="#">FIFA</a></h3>
+						<p>FIFA 11 (FIFA Soccer 11 in North America) is the 18th title in Electronic Arts' FIFA series of football video games. <a href="#">read more</a></p>
+					</div>					
+				</div>
+				<div class="providerInfo">
+					<h4>AE Games</h4>
+					<p>
+						12 South St.<br />
+						Wolverhampton<br />
+						WV10 JH6<br />
+						<span>+44 07919580129</span><br />
+						<strong>Vladimir Shafikov</strong>
+					</p>
+				</div>
+				<div class="stockLevel"><p class="outStock">Out of stock</p></div><!-- class="outStock" -->
+				<div class="price"><p><a href="#" class="buyBtn">Buy &pound;17.50</a></p></div>
 				<div class="clearall"></div>
 			</div><!-- end .item -->
 			
 			<div id="paginator">
-				<a href="#" class="previous">Previous</a>
-				<a href="#" class="next">Next</a>
+				<a href="#" class="previous">&#60; Previous</a>
+				<a href="#" class="next">Next &#62;</a>
+				<div class="clearall"></div>
 			</div><!-- end #paginator -->
 		</div><!-- end #content -->
 		
 		<div id="footer">
-			<ul>
-				<li>Contact number: +44 7919 580129</li>
-				<li>2011 &ndash; 2012</li>
-				<li><a href="#">About us</a></li>
-			</ul>
+			<p class="year">2011 &ndash; 2012</p>
+			<p class="aboutUs"><a href="#">About us</a></p>
 		</div><!-- end #footer -->
 	</div><!-- end #container -->
 </body>

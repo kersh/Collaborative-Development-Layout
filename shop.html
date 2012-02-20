@@ -34,15 +34,9 @@
 		<div id="allNavigation">
 				<ul id="nav">
 					<li><a href="#">Featured products</a></li>
-					<li class="current"><a href="#">All products</a></li>
+					<li><a href="#">All products</a></li>
 					<li><a href="#">Games</a></li>
 					<li><a href="#">Software</a></li>
-				</ul>
-				<ul id="sortNav">
-					<li class="sortByTitle">Sort by:</li>
-					<li><a href="#" class="currentSort">Newest first</a></li>
-					<li><a href="#">Most downloadable</a></li>
-					<li><a href="#">A-Z</a></li>
 				</ul>
 		</div><!-- end #allNavigation -->
 		
@@ -51,23 +45,33 @@
 			Pagination.
 		-->
 		<div id="content">
+			<ul class="buyStages">
+				<li class="stageDone">
+					<div class="stageImg">1</div>
+					<div class="stageName itemsSelection">Items selection</div>
+				</li>
+				<li>
+					<div class="stageImg">2</div>
+					<div class="stageName deliveryType">Delivery type</div>
+				</li>
+				<li>
+					<div class="stageImg">3</div>
+					<div class="stageName">Payment</div>
+				</li>
+				<li>
+					<div class="stageImgCheckout">4</div>
+					<div class="stageName checkOutPos">Checkout</div>
+				</li>
+				<div class="clearall"></div>
+			</ul>
+			
 			<ul id="itemsTitleBar">
 				<li class="nameDesc">Name/Description</li>
-				<li class="provider">Wholesale Provider</li>
-				<li class="sortStock"><p>Sort by: </p>
-				<form action="">
-					<select name="stockLevel">
-						<option value="mostStocked">Most stocked</option>
-						<option value="lessStocked">Less stocked</option>
-					</select>
-				</form></li>
-				<li class="sortPrice"><p>Sort by: </p>
-				<form action="">
-					<select name="priceLevel">
-						<option value="lowFirst">Lowest first</option>
-						<option value="highFirst">Highest first</option>
-					</select>
-				</form></li>
+				<li class="provider shopProviderTitle">Wholesale Provider</li>
+				<li class="sortStock shopStockLevelTitle">Stock level</li>
+				<li class="shopPriceTitle">Price</li>
+				<li class="shopQuantityTitle">Quantity</li>
+				<li class="shopRemoveTitle">Remove</li>
 				<div class="clearall"></div>
 			</ul><!-- end #itemsTitleBar -->
 			
@@ -82,18 +86,20 @@
 						<p>FIFA 11 (FIFA Soccer 11 in North America) is the 18th title in Electronic Arts' FIFA series of football video games. <a href="#">read more</a></p>
 					</div>					
 				</div>
-				<div class="providerInfo">
+				<div class="providerInfo shopProviderInfo">
 					<h4>EA Games</h4>
 					<p>
 						Bellevue<br />
 						Washington<br />
 						U.S.<br />
-						<span>+1 07919580129</span><br />
-						<strong>Larry Probst</strong>
+						<span>+44 07919580129</span><br />
+						<strong>Vladimir Shafikov</strong>
 					</p>
 				</div>
-				<div class="stockLevel"><p class="inStock">in stock: 100</p></div><!-- class="outStock" -->
-				<div class="price"><p><a href="#" class="buyBtn">Buy &pound;17.50</a></p></div>
+				<div class="stockLevel shopStockLevel"><p class="inStock">in stock: 100</p></div><!-- class="outStock" -->
+				<div class="price shopPrice"><p>&pound;17.50</p></div>
+				<div class="shopQuantity"><form action="#"><input type="text" value="1" /></form></div>
+				<div class="shopRemove"><p><a href="#">remove</a></p></div>
 				<div class="clearall"></div>
 			</div><!-- end .item -->
 			
@@ -101,14 +107,14 @@
 				<div class="nameDescImg">
 					<div class="imgDownlds">
 						<img src="images/itemImages/halfLife.png" alt="item1" />
-						<p class="downloadNum">25 012 downloads</p>
+						<p class="downloadNum">25 774 downloads</p>
 					</div>
 					<div class="nameDescription">
 						<h3><a href="#">Half-Life 2</a></h3>
 						<p>Like its predecessor, Half-Life 2 was met with near-unanimous critical acclaim. It was praised for its advanced physics <a href="#">read more</a></p>
 					</div>					
 				</div>
-				<div class="providerInfo">
+				<div class="providerInfo shopProviderInfo">
 					<h4>Valve Corporation</h4>
 					<p>
 						12 South St.<br />
@@ -118,42 +124,20 @@
 						<strong>Gabe Newell</strong>
 					</p>
 				</div>
-				<div class="stockLevel"><p class="inStock">in stock: 350</p></div><!-- class="outStock" -->
-				<div class="price"><p><a href="#" class="buyBtn">Buy &pound;17.50</a></p></div>
+				<div class="stockLevel shopStockLevel"><p class="inStock">in stock: 350</p></div><!-- class="outStock" -->
+				<div class="price shopPrice"><p>&pound;17.50</p></div>
+				<div class="shopQuantity"><form action="#"><input type="text" value="1" /></form></div>
+				<div class="shopRemove"><p><a href="#">remove</a></p></div>
 				<div class="clearall"></div>
 			</div><!-- end .item -->
-			
-			<div class="item">
-				<div class="nameDescImg">
-					<div class="imgDownlds">
-						<img src="images/itemImages/macOffice.png" alt="item1" />
-						<p class="downloadNum">17 400 downloads</p>
-					</div>
-					<div class="nameDescription">
-						<h3><a href="#">Office:mac</a></h3>
-						<p>Microsoft Office for Mac 2011 is the most recent version of the Microsoft Office productivity suite for Mac OS X. <a href="#">read more</a></p>
-					</div>					
-				</div>
-				<div class="providerInfo">
-					<h4>Microsoft</h4>
-					<p>
-						Albuquerque<br />
-						New Mexico<br />
-						United States<br />
-						<span>+44 07919580129</span><br />
-						<strong>Bill Gates</strong>
-					</p>
-				</div>
-				<div class="stockLevel"><p class="inStock">in stock: 540</p></div><!-- class="outStock" -->
-				<div class="price"><p><a href="#" class="buyBtn">Buy &pound;39.00</a></p></div>
+			<div class="summary">
+				<p>Summary</p><div class="sumAmount">&pound;35.00</div>
 				<div class="clearall"></div>
-			</div><!-- end .item -->
-			
-			<div id="paginator">
-				<a href="#" class="previous">&#60; Previous</a>
-				<a href="#" class="next">Next &#62;</a>
+				
+				<a href="#" class="continue">Delivery type &#62;</a>
 				<div class="clearall"></div>
-			</div><!-- end #paginator -->
+			</div><!-- end .summary -->
+			
 		</div><!-- end #content -->
 		
 		<div id="footer">

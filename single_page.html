@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Web store. Collaborative Development.</title>
+</head>
+<body>
+	<div id="container">
+		<!--
+			Log in bar on the top. Basket if logged in.
+			Logo. Search.
+		-->
+		<div id="header">
+			<div id="accountBar">
+				<p class="welcomeMessage"><img src="images/icons/user.png" /> Hello, Username (username@email.com). <a href="#">Log out</a></p>
+				<p class="basketInfo"><img src="images/icons/cart.png"/> <a href="#">Your items: 0</a></p>
+			</div>
+		
+			<div id="logoSearchBar">
+				<div id="logo"><img src="images/logo.jpg" alt="Logotype" /></div>
+				<form id="search">
+					<input type="text" name="search" id="searchField" placeholder="Search..." />
+					<input type="submit" value="Search" id="submitBtn" />
+				</form>
+			</div>
+		</div><!-- end #header -->
+	
+	
+		<!--
+			Main navigation.
+			Sorting options.
+		-->
+		<div id="allNavigation">
+				<ul id="nav">
+					<li><a href="#">Featured products</a></li>
+					<li class="current"><a href="#">All products</a></li>
+					<li><a href="#">Games</a></li>
+					<li><a href="#">Software</a></li>
+				</ul>
+				<ul id="sortNav">
+					<li class="sortByTitle">Sort by:</li>
+					<li><a href="#" class="currentSort">Newest first</a></li>
+					<li><a href="#">Most downloadable</a></li>
+					<li><a href="#">A-Z</a></li>
+				</ul>
+		</div><!-- end #allNavigation -->
+		
+		<!--
+			Container with all items.
+			Pagination.
+		-->
+		<div id="content">
+			
+			<div class="singleItem">
+				<h1>FIFA</h1>
+				<div class="singleImgDownlds">
+					<img src="images/itemImages/fifa.png" alt="item1" />
+					<p class="downloadNum">13 994 downloads</p>
+				</div>
+				<div class="singleProviderInfo">
+					<h4>EA Games</h4>
+					<p>
+						Bellevue<br />
+						Washington<br />
+						U.S.<br />
+						<span>+1 07919580129</span><br />
+						<strong>Larry Probst</strong>
+					</p>
+				</div>
+				<div class="singleStockLevel"><p class="inStock">in stock: 100</p></div>
+				<div class="singleNameDescription">
+					<h3>Description</h3>
+					<p>FIFA 12 (titled FIFA Soccer 12 in North America) is the nineteenth game in Electronic Arts' FIFA series of association football video games. It was developed by EA Canada, and published by Electronic Arts worldwide under the EA Sports label. David Rutter, the line producer for FIFA 12, promised "a revolutionary year for FIFA ... especially in the gameplay department."<br />
+						The manager's relationship with players and the media will play a larger role, with team selection, success, and salaries all affecting individual players' attitudes and morale, and the press picking up on injuries and unrest, all of which can impact performance on the pitch. Unhappy players can talk to the press and stir up interest from other clubs, with transfer AI also having been improved upon. Transfer targets will sometimes demand excessive wages if they think they can get away with it, and rival clubs will chance tempting your star players away for a bargain price. Each club will be assigned a particular transfer mentality, where the richest clubs will tend to concentrate on acquiring the very best players available, whereas smaller clubs may look more for youngsters, older players, and loans. The AI will fine-tune this element to prevent it becoming too predictable. The transfer window has been overhauled, with the last day being slowed down to progress on hours rather than days and featuring a ticking countdown clock as clubs hurry to complete last-minute deals. It will be possible to delay transfers until right up to the deadline in order to see how others pan out, and the club's Chief Executive will help with pointing out potential late signings. Other improvements to Career Mode include the calendar, news story displays and news feeds, which aim to make information such as upcoming events, transfers, and rumours more accessible. Facebook integration has been implemented.</p>
+				</div>
+				<div class="clearall"></div>
+				<div class="singlePrice"><a href="#" class="buyBtn">Buy &pound;17.50</a></div>
+				<div class="clearall"></div>
+			</div><!-- end .singleItem -->
+			
+		</div><!-- end #content -->
+		
+		<div id="footer">
+			<p class="year">2011 &ndash; 2012</p>
+			<p class="aboutUs"><a href="#">About us</a></p>
+		</div><!-- end #footer -->
+	</div><!-- end #container -->
+</body>
+
+</html>
